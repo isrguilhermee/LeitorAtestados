@@ -19,7 +19,7 @@ class OCRService:
             pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
         else:
             # Use macOS Homebrew path by default
-            pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
+            pytesseract.pytesseract.tesseract_cmd = "C:/desenvolvimento/Tesseract-OCR/tesseract.exe"
         self.language = language
     
     def extract_text(self, file_path):
