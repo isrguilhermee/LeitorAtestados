@@ -1,0 +1,67 @@
+[
+  {
+    "original": {
+      "CID": "CID não foi encontrado. Verifique se o texto está legível ou se segue o padrão CID-10 (ex.: J00, M54.5).",
+      "Médico": "Nome do médico não foi encontrado. Certifique-se de que o prefixo 'Dr.' ou 'Dra.' esteja presente e legível.",
+      "Data de Emissão": "Data de emissão não foi encontrada. A imagem pode estar ilegível ou sem a expressão 'emitido em'.",
+      "Dias de Repouso": "Dias de repouso não foram encontrados. Verifique se a quantidade está indicada de forma numérica no atestado."
+    },
+    "corrected": {
+      "CID": "10B-34",
+      "Médico": "Dr. Carlos Augusto Trevisan",
+      "Data de Emissão": "06/07/2018",
+      "Dias de Repouso": "1"
+    },
+    "text_snippet": "by\n\n| 4\nIRMANDADE DA SANTA CASA, a\nterei DE SÃO PAULO. ma\nSOCIAL DA SAÚDE - SROPAULO\n\nAUTARQUIA HOSPITALAR MUNICIPAL\nPRONTO SOCORRO MUNICIPAL 21 DE JUNHO\n\n|\n\n|\n| ATESTADO MÉDICO |\nATESTO, PARA OS DEVIDOS FINS, QUE O(A) SR(A) Soma tior\n\nÓRGÃO EMISSOR\nFOI SUBMETIDO A CONSULTA NESTA DATA, NO\nHORAS, SENDO PORTADOR(A) DA\n\n| DORTADOR(A) DO RG\n\nCER AFASTADO DE SUAS\n+ POR UM PERÍODO DE\nDIA(S), A PARTIR DESTA DATA.\n\nPORTADOR(A) DO o DT\n\nESTOU CIENTE E DE a\nPACIENTE ou\nperca ASSINATURA\n\n",
+    "timestamp": "2025-11-30T19:36:06.075364"
+  },
+  {
+    "original": {
+      "CID": "CID não foi encontrado. Verifique se o texto está legível ou se segue o padrão CID-10 (ex.: J00, M54.5).",
+      "Médico": "ATESTO PARA OS DEVIDOS FINS",
+      "Data de Emissão": "Data de emissão não foi encontrada. A imagem pode estar ilegível ou sem a expressão 'emitido em'.",
+      "Dias de Repouso": "15 dias de repouso"
+    },
+    "corrected": {
+      "CID": "G43",
+      "Médico": "Dra Marcela Reges de Faria",
+      "Data de Emissão": "20/03/22",
+      "Dias de Repouso": "1"
+    },
+    "text_snippet": "SISTEMA MINISTÉRIO GOVERNO\nSUS UNICO DA SAÚDE DO ESTADO\nDE SAUDE DE GOIÁS\ncndo\n\nATESTADO MÉDICO\n\nATESTO PARA OS DEVIDOS FINS, A PEDIDO, QUE O(A) SR.(A) / É\n\nda Sodea HA\n\nIDENTI. OU REGISTRO\n\nFOI ATENDIDO(A) Chung\nClÍRCA OU SERVIÇO\n\nDO (fudad. suite 4 Haniduaeite (DA) Lurgu Plarabogas\nHospirAL AMBULATÓRIO 4\n\nnooa Ly l54 1) do SO voras, necessmando ve / is Sa\n\nEXTENSO\n\nDIAS DE REPOUSO POR MOTIVO DE DOENÇA.\n\nao g 4 5\n\nASSINATURA DO PACIENTE OU RESPONSÁVEL\n\nLOCAL E DATA\n\nai\n\nEA\nASSINATURA DO MÉDICO ",
+    "timestamp": "2025-11-30T19:37:43.240691"
+  },
+  {
+    "original": {
+      "CID": "CID não foi encontrado. Verifique se o texto está legível ou se segue o padrão CID-10 (ex.: J00, M54.5).",
+      "Médico": "Nome do médico não foi encontrado. Certifique-se de que o prefixo 'Dr.' ou 'Dra.' esteja presente e legível.",
+      "Data de Emissão": "Data de emissão não foi encontrada. A imagem pode estar ilegível ou sem a expressão 'emitido em'.",
+      "Dias de Repouso": "15 dias de repouso"
+    },
+    "corrected": {
+      "CID": "H109",
+      "Médico": "Dr Fernando Barbosa da Silva",
+      "Data de Emissão": "23/10/23",
+      "Dias de Repouso": "1"
+    },
+    "text_snippet": "4 é ,\nnua SISTEMA UNICO DE SAUDE\n\nATESTADO MÉDICO\n\nAtesto 7 os devidos fins, a pedido, que o (a) Si 1.8 Avi di Á A\n\n| Who =\nFoi Atendido (a) ESP gu 1 G\n\nClinica ou Serviço\n\nNo dia ZA, 1101 Z3 às horas, necessitando de D4 (Hm )\n\nPor Extenso\n\nDias de repouso, por motivo de doença.\n\nDD HO3\n\nES/ Leda Me Drs\n\nClínica ou Serviço\n\n!\nNOTA - Este Atestado é válido para finalidades previstas no Artigo 27 de CLPS, aprovada pelo\ndecreto nº 89.512 de 23/01/84, e resolução CFM 1190/84 e será expedido para jus",
+    "timestamp": "2025-11-30T19:38:46.657552"
+  },
+  {
+    "original": {
+      "CID": "10B-34",
+      "Médico": "Dr. Carlos Augusto Trevisan",
+      "Data de Emissão": "Data de emissão não foi encontrada. A imagem pode estar ilegível ou sem a expressão 'emitido em'.",
+      "Dias de Repouso": "1"
+    },
+    "corrected": {
+      "CID": "J00 (C10-10)",
+      "Médico": "Dr. Daniel M. Brandão",
+      "Data de Emissão": "15/08/07",
+      "Dias de Repouso": "3"
+    },
+    "text_snippet": "Lua URGÊNCIA\nEai CR CLÍNICA MÉDICA\n\nATESTADO MÉDICO\n\nAtesto para os devidos fins, que o\n\nSr(a) seia: ria dada E.\n\ncormnareçe Ag I-maternidade PROMATER com\nquadro de Q Co\n\ndevendo ser afastado(a) das atividades por 03. (das) )\ndias, a partir desta data.\n\nNata IS PE O e\n\nRua São José, 1979 - CEP: 59054-830 - Lagoa Nova - Natal/RN - Tel, (84) 3204.0800\n",
+    "text_full": "Lua URGÊNCIA\nEai CR CLÍNICA MÉDICA\n\nATESTADO MÉDICO\n\nAtesto para os devidos fins, que o\n\nSr(a) seia: ria dada E.\n\ncormnareçe Ag I-maternidade PROMATER com\nquadro de Q Co\n\ndevendo ser afastado(a) das atividades por 03. (das) )\ndias, a partir desta data.\n\nNata IS PE O e\n\nRua São José, 1979 - CEP: 59054-830 - Lagoa Nova - Natal/RN - Tel, (84) 3204.0800\n",
+    "timestamp": "2025-11-30T19:51:28.278933"
+  }
+]

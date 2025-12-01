@@ -247,7 +247,13 @@ def create_app():
                             "Verifique se a imagem está legível e em boa qualidade."
                         )
                     else:
-                        data = nlp_service.extract_info(text)
+                        # Tenta usar IA primeiro, com fallback para método tradicional
+                        try:
+                            from services.nlp_service import extract_info_with_ai
+                            data = extract_info_with_ai(text, use_ai=True)
+                        except ImportError:
+                            # Fallback se função não estiver disponível
+                            data = nlp_service.extract_info(text)
                         
                         # Conta quantos campos foram encontrados (não são mensagens de erro)
                         found_count = sum(1 for value in data.values() 

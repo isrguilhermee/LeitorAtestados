@@ -223,3 +223,51 @@ def extract_info(text):
     """Legacy function wrapper for backward compatibility."""
     nlp = NLPService()
     return nlp.extract_info(text)
+
+
+def extract_info_with_ai(text: str, use_ai: bool = True) -> dict:
+    """
+    Extrai informações usando IA quando disponível, com fallback para método tradicional.
+    
+    Args:
+        text: Texto extraído do OCR
+        use_ai: Se True, tenta usar IA primeiro
+        
+    Returns:
+        Dicionário com informações extraídas
+    """
+    if use_ai:
+        try:
+            from services.ai_service import AIService
+            ai_service = AIService(use_advanced_nlp=True)
+            ai_results = ai_service.extract_with_ai(text)
+            
+            # Combina resultados da IA com método tradicional para maior precisão
+            nlp = NLPService()
+            traditional_results = nlp.extract_info(text)
+            
+            # Prefere resultados da IA quando disponíveis e válidos
+            final_results = {}
+            for key in ['CID', 'Médico', 'Data de Emissão', 'Dias de Repouso']:
+                ai_value = ai_results.get(key, '')
+                trad_value = traditional_results.get(key, '')
+                
+                # Se IA encontrou algo válido, usa; senão tenta tradicional
+                if ai_value and 'não foi encontrado' not in ai_value and 'não foram encontrados' not in ai_value:
+                    final_results[key] = ai_value
+                elif trad_value and 'não foi encontrado' not in trad_value and 'não foram encontrados' not in trad_value:
+                    final_results[key] = trad_value
+                else:
+                    # Usa o valor da IA como fallback (mesmo que seja mensagem de erro)
+                    final_results[key] = ai_value if ai_value else trad_value
+            
+            return final_results
+        except Exception as e:
+            print(f"⚠ Erro ao usar IA, usando método tradicional: {e}")
+            # Fallback para método tradicional
+            nlp = NLPService()
+            return nlp.extract_info(text)
+    else:
+        # Usa apenas método tradicional
+        nlp = NLPService()
+        return nlp.extract_info(text)
