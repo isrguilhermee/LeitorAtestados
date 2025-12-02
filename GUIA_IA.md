@@ -215,3 +215,4 @@ Para melhorar ainda mais a precisão:
 - Histórico de correções pode ser usado para treinar modelos customizados no futuro
 - Todos os dados de treinamento são salvos localmente
 
+
